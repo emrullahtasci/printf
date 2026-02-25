@@ -6,7 +6,7 @@
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 21:17:58 by etasci            #+#    #+#             */
-/*   Updated: 2026/02/18 21:56:27 by etasci           ###   ########.fr       */
+/*   Updated: 2026/02/25 19:52:23 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	ft_print_char(va_list args)
 {
-	int c;
+	int	c;
+
+	c = va_arg(args, int);
 	return (write(1, &c, 1));
 }

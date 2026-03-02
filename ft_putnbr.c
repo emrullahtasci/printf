@@ -3,33 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:37:02 by emrullah          #+#    #+#             */
-/*   Updated: 2026/02/28 16:37:02 by emrullah         ###   ########.fr       */
+/*   Updated: 2026/03/02 20:25:47 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_putnbr(int nbr)
-{
-    long nbr;
-    int count;
-    count = 0;
+#include "printf.h"
 
-    if (nbr < 0)
-    {
-        count += write(1,"-",1);
-        nbr = -nbr;
-    }
-    if (nbr > 10)
-    {
-        count += ft_putnbr(nbr / 10);
-    }
-    count += putchar(nbr % 10 + '0');
-    return(count);
-}
-int main()
+int	ft_putnbr(int nbr)
 {
-    
+	long	x;
+	int		count;
+	char	c;
 
+	x = nbr;
+	if (x < 0)
+	{
+		count += write(1, "-", 1);
+		x = -x;
+	}
+	if (x >= 10)
+	{
+		count += ft_putnbr(x / 10);
+	}
+	c = (x % 10 + '0');
+	count += write(1, &c, 1);
+	return (count);
 }

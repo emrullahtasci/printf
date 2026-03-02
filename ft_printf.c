@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 #include <stdarg.h>
 #include <unistd.h>
-int	ft_printf(const char *str, ...)
+int	ft_printf(const char *format, ...)
 {
 	va_list	args;
 	int		i;
@@ -21,18 +21,21 @@ int	ft_printf(const char *str, ...)
 
 	i = 0;
 	count = 0;
-	va_start(args, str);
-	while (str[i])
+	va_start(args, format);
+	while (format[i])
 	{
-		if (str[i] == '%' && str[i + 1])
+		if (format[i] == '%' && format[i + 1])
 		{
 			i++;
-			if (str[i] == 'c')
+			if (format[i] == 'c')
 				count += ft_print_char(args);
+			else if (format[i] == 's')
+				count += ft_printf_str(args);
+	
 		}
 		else
 		{
-			count += write(1, &str[i], 1);
+			count += write(1, &format[i], 1);
 		}
 		i++;
 	}

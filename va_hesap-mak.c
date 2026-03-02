@@ -16,6 +16,7 @@ int toplam(int sayi,...)
 {
 	va_list emru;
 	int i;
+	i = 0;
 
 
 	va_start(emru, sayi);
@@ -25,9 +26,12 @@ int toplam(int sayi,...)
 	number = va_arg(emru, int);
 	number2 = va_arg(emru, int);
 	number3 = va_arg(emru,int);
-	while(sayi[i] == '%')
+	while(sayi[i])
 	{
-		if(sayi[i] == 'd' )
+		if(sayi[i] == '%' , sayi[i + 1])
+		{
+			i++;
+		}
 	}
 
 

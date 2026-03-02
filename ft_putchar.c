@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_char.c                                    :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/18 21:17:58 by etasci            #+#    #+#             */
-/*   Updated: 2026/02/25 19:52:23 by etasci           ###   ########.fr       */
+/*   Created: 2026/02/28 15:24:44 by emrullah          #+#    #+#             */
+/*   Updated: 2026/02/28 15:24:44 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_print_char(va_list args)
+int	ft_putchar(int c)
 {
-	int	c;
-
-	c = va_arg(args, int);
 	return (write(1, &c, 1));
 }

@@ -1,20 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_unsigned.c                                :+:      :+:    :+:   */
+/*   ft_putunsigned.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/25 21:03:22 by etasci            #+#    #+#             */
-/*   Updated: 2026/02/25 23:24:55 by etasci           ###   ########.fr       */
+/*   Created: 2026/02/28 16:38:00 by emrullah          #+#    #+#             */
+/*   Updated: 2026/02/28 16:38:00 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-int ft_print_unsigned( int n)
+int ft_putunsigned(unsigned int)
 {
-	int	count;
-	
-
+    
 }

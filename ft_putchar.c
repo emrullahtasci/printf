@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 15:24:44 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/02 16:22:56 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/07 17:27:57 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,4 +15,9 @@
 int	ft_putchar(int c)
 {
 	return (write(1, &c, 1));
+}
+#include<stdio.h>
+int main()
+{
+	ft_putchar('g');
 }

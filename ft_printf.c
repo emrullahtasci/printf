@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 20:10:34 by etasci            #+#    #+#             */
-/*   Updated: 2026/03/02 19:53:38 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/07 17:06:50 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,7 @@ int	ft_printf(const char *format, ...)
 		if (format[i] == '%' && format[i + 1])
 		{
 			i++;
-			if (format[i] == 'c')
-				count += ft_print_char(args);
-			else if (format[i] == 's')
-				count += ft_printf_str(args);
-			else if (format[i] == ' ')
-				;
+			count += ft_handle_format(format[i],args);
 		}
 		else
 			count += write(1, &format[i], 1);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_puthex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:39:18 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/02 20:22:53 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/07 17:06:56 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@ int	ft_puthex_low(unsigned long x)
 	char	*base_low;
 	int		count;
 
-	count = 0;
+	
 	base_low = "0123456789abcdef";
+	count = 0;
 	if (x >= 16)
 		count += ft_puthex_low(x / 16);
-	count += count + ft_puthex_low(base_low[x % 16]);
+	count += ft_putchar(base_low[x % 16]);
 	return (count);
 }
 

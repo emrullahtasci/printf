@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+         #
+#    By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/18 20:48:41 by etasci            #+#    #+#              #
-#    Updated: 2026/02/18 20:48:42 by etasci           ###   ########.fr        #
+#    Updated: 2026/03/04 21:01:32 by emrullah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunsigned.c ft_puthex.c ft_putptr.c
+SRCS = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_putunsigned.c ft_puthex.c ft_putptr.c ft_handle_format.c
 OBJS = $(SRCS:.c=.o)
 
 

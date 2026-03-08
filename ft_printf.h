@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 20:43:30 by etasci            #+#    #+#             */
-/*   Updated: 2026/03/02 19:59:13 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/07 17:06:52 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,5 @@ int	ft_putunsigned(unsigned int n);
 int	ft_puthex_up(unsigned long x);
 int	ft_puthex_low(unsigned long x);
 int	ft_putptr(void *ptr);
+int ft_handle_format(int spec,va_list args);
 #endif

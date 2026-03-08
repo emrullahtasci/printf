@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:37:02 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/02 20:25:47 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/07 17:06:58 by emrullah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putnbr(int nbr)
 {
@@ -18,6 +18,7 @@ int	ft_putnbr(int nbr)
 	int		count;
 	char	c;
 
+	count = 0;
 	x = nbr;
 	if (x < 0)
 	{

@@ -21,6 +21,7 @@ make clean  # object dosyalarını siler
 make fclean # object ve kütüphaneyi siler
 make re     # temiz derleme yapar
 
+##Dosya kullanımı
 .
 ├── ft_printf.c
 ├── ft_handle_format.c
@@ -34,7 +35,7 @@ make re     # temiz derleme yapar
 ├── Makefile
 └── README.md
 
-Yapay Zeka Kullanımı
+##Yapay Zeka Kullanımı
 
 Bu proje geliştirilirken yapay zeka araçları şu amaçlarla kullanılmıştır:
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putunsigned.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:38:00 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/07 17:18:59 by emrullah         ###   ########.fr       */
+/*   Updated: 2026/03/09 19:42:35 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	ft_putunsigned(unsigned int n)
 
 	count = 0;
 	if (n >= 10)
-		count +=  ft_putunsigned(n / 10);
+		count += ft_putunsigned(n / 10);
 	count += ft_putchar((n % 10) + '0');
 	return (count);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_handle_format.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: emrullah <emrullah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 20:23:15 by etasci            #+#    #+#             */
-/*   Updated: 2026/03/07 17:06:48 by emrullah         ###   ########.fr       */
+/*   Updated: 2026/03/10 00:30:58 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,14 @@ int	ft_handle_format(int spec, va_list args)
 		return (ft_puthex_low(va_arg(args, unsigned int)));
 	else if (spec == 'X')
 		return (ft_puthex_up(va_arg(args, unsigned int)));
-    else if (spec == 'p')
-        return (ft_putptr(va_arg(args, void *)));
-    else if (spec == '%')
-        return (ft_putchar('%'));
-	return (0);
+	else if (spec == 'p')
+		return (ft_putptr(va_arg(args, void *)));
+	else if (spec == '%')
+		return (ft_putchar('%'));
+	else
+	{
+		ft_putchar('%');
+		ft_putchar(spec);
+		return (2);
+	}
 }

@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putptr.c                                        :+:      :+:    :+:   */
+/*   hesap.maks.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/28 16:39:45 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/09 18:12:00 by etasci           ###   ########.fr       */
+/*   Created: 2026/03/09 21:43:57 by etasci            #+#    #+#             */
+/*   Updated: 2026/03/10 01:12:44 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
-
-int	ft_putptr(void *ptr)
+int	ft_printf(const char *format,...)
 {
-	unsigned long	x;
-	int				count;
 
-	if (!ptr)
-		return (write(1, "(nil)", 5));
-	else
+	int count;
+	int i;
+	va_start(format,args)
+	va_arg(format,)
+
+	while(format[i])
 	{
-		x = (unsigned long)ptr;
-		count = 0;
-		count += write(1, "0x", 2);
-		count += ft_puthex_low(x);
+		i++;
+		count = 
+
 	}
-	return (count);
+
 }

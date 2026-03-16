@@ -2,7 +2,7 @@
 
 # ft_printf
 
-## Proje Açıklaması
+## Proje Açıklaması(Description)
 C dilindeki standart `printf` fonksiyonunun temel özelliklerini yeniden yazma projesi.
 Amaç: variadic functions, format parsing ve `write()` kullanımı öğrenmek.
 
@@ -12,7 +12,7 @@ Amaç: variadic functions, format parsing ve `write()` kullanımı öğrenmek.
 `%c %s %p %d %i %u %x %X %%`
 
 ---
-
+## Talimatlar(Instructions)
 ## Derleme
 ```bash
 make        # kütüphaneyi derler
@@ -33,6 +33,17 @@ make re     # temiz derleme yapar
 ├── ft_printf.h
 ├── Makefile
 └── README.md
+
+##Kaynaklar(Resources)
+42 Curriculum Projesi Talimatları – ft_printf proje yönergeleri
+
+C Standard Library Documentation – printf, write, va_list vs.
+
+GeeksforGeeks / cplusplus.com – Variadic functions ve format string örnekleri
+
+Stack Overflow – Hataları çözmek veya edge-case senaryoları öğrenmek
+
+YouTube / Bloglar – Format parsing ve ft_printf örnek anlatımlar
 
 ##Yapay Zeka Kullanımı
 

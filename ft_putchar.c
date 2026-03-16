@@ -6,11 +6,11 @@
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 15:24:44 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/10 01:11:48 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/16 20:57:07 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include <unistd.h>
 
 int	ft_putchar(int c)
 {

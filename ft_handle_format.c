@@ -6,11 +6,12 @@
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/02 20:23:15 by etasci            #+#    #+#             */
-/*   Updated: 2026/03/10 00:30:58 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/16 20:56:18 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include <stdarg.h>
 
 int	ft_handle_format(int spec, va_list args)
 {

@@ -6,7 +6,7 @@
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 20:43:30 by etasci            #+#    #+#             */
-/*   Updated: 2026/03/09 18:11:56 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/16 21:02:24 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <unistd.h>
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(int c);

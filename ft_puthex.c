@@ -6,7 +6,7 @@
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/28 16:39:18 by emrullah          #+#    #+#             */
-/*   Updated: 2026/03/09 22:39:40 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/16 20:39:34 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,3 @@ int	ft_puthex_up(unsigned long x)
 	count += ft_putchar(base_up[x % 16]);
 	return (count);
 }
-
-

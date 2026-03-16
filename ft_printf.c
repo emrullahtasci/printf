@@ -6,12 +6,11 @@
 /*   By: etasci <etasci@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 20:10:34 by etasci            #+#    #+#             */
-/*   Updated: 2026/03/10 00:27:28 by etasci           ###   ########.fr       */
+/*   Updated: 2026/03/16 21:02:56 by etasci           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include <stdarg.h>
 
 int	ft_printf(const char *format, ...)
 {
